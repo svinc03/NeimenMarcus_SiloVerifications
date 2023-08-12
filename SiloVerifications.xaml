@@ -1,0 +1,260 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SiloVerifications" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="910.4,3042.4" sap2010:WorkflowViewState.IdRef="SiloVerifications_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uasa="clr-namespace:UiPath.Activities.System.Arrays;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="46">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
+      <x:String>UiPath.Activities.System.Arrays</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="59">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="SiloVerifications" sap:VirtualizedContainerService.HintSize="829.6,2977.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Designer Clothing, Shoes, Handbags, &amp; Beauty | Neiman Marcus" sap:VirtualizedContainerService.HintSize="767.2,2865.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7e6fa777-f1f7-49d1-b71c-f0f316ba5888" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="733.6,2648.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="FirstSilo" />
+              <Variable x:TypeArguments="scg:List(x:String)" Name="DefaultValues">
+                <Variable.Default>
+                  <VisualBasicValue x:TypeArguments="scg:List(x:String)" ExpressionText="new list (of string) from {&quot;New &amp; Now&quot; ,&quot;Designers&quot; , &quot;Clothing&quot; , &quot;Accessories&quot;}" />
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="scg:List(x:String)" Name="StringList">
+                <Variable.Default>
+                  <VisualBasicValue x:TypeArguments="scg:List(x:String)" ExpressionText="new list (of string)" />
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="sd:DataTable" Name="DT" />
+              <Variable x:TypeArguments="x:String" Name="ThirdSilo" />
+              <Variable x:TypeArguments="x:String" Name="SecondSilo" />
+              <Variable x:TypeArguments="x:Int32" Name="Index">
+                <Variable.Default>
+                  <Literal x:TypeArguments="x:Int32" />
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:String" Name="ForthSilo" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text 'WOMEN'" sap:VirtualizedContainerService.HintSize="671.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="7e6fa777-f1f7-49d1-b71c-f0f316ba5888" TextString="[FirstSilo]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.neimanmarcus.com/mens" DesignTimeRectangle="45, 270, 100, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'New &amp; Now'" FullSelectorArgument="&lt;webctrl parentid='silo-navigation' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='silo-navigation' tag='SPAN' type='' class='' /&gt;" Guid="f2f75e55-a34a-4f0f-a7ed-f6272507737b" InformativeScreenshot="7601fc381afafc733e4bc99fac0cc2cb.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Designer Clothing, Shoes, Handbags, &amp;amp; Beauty | Neiman Marcus' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="47, 206, 75, 30" ElementType="Text" FriendlyName="'WOMEN'" FullSelectorArgument="&lt;webctrl parentid='clean-header-section' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='clean-header-section' tag='P' type='' class='' aaname='WOMEN' check:innerText='WOMEN' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAiCAYAAAAeXoQCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJbSURBVGhD7ZXrrcMgDEazWrNNlU2uukq7TKWuw3WCTQx8EFKn/3wkpJbysI+NOgXna1yeAZdnwOUZcHkGXJ4Bl2fA5RlweQaSvGmawvz34W+aT3jcJvp9Do83T2leS2dvCM/7ujcfy4t/BHz+5u55Ge9HmNczbw+KUiHzaGRrn2Gp5go4PxRzktc+hC9oHBCTBWL50uZoBCzyugkxqTDl2rPyaDSLNSIvBnIg4f7kSYG7sgxe7amD2gNGgpI8Gr0O7Z7D8o67V51x8LK68lqLROqMJEmFM6n9ThWka8oEtTwkV+iuOyvvRvm17huSB0VwZ9EcfJ7oYJ4br/pCn3bknuUe5eAC8N77wskb5aX84ueMIXkiSiejg+DP+pDYPXnyzecPQGv3IklX1N1wuOYLeXv+uBkO5OmgeGLbKN/1Rej7CihAB6m2DkzHUMWzoYVdKY/gfVn8o/LKS7fOUIFlnQaf57XyUIHyPX1567pqZGvb56e5YXlZMPXBuhNxV4jgeh7Rf7boeynrenl0Y/58x+VJQtQ5HEC2KXXmM15QBk1I5YafTNGldVFUglUifXmnn62Q5FNsZ+Sl50h/33UHcVX4rx0HJ1LKvTmxSPUZqKNl7TZQ51wtj5AmkDEmLyUPgiJ0IujADS7AOuoE+ucjefoZ5nf+Tl5qFHhvBMjbN8HLk5iDPwUlEA+8H8ojtqJVsvvy4L3Z2p48olm0CJC3tyzurIMLC7Inx6PZsURL3prI0uriX8kjei6gPGcMl2fA5RlweQZcngGXZ8DlGXB5BlyeAZdnwOV9TQj/fkG6Ij+SezsAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'WOMEN'" sap:VirtualizedContainerService.HintSize="671.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="7e6fa777-f1f7-49d1-b71c-f0f316ba5888" TextString="[SecondSilo]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.neimanmarcus.com/mens" DesignTimeRectangle="210, 270, 83, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Designers'" FullSelectorArgument="&lt;webctrl aaname='Designers' parentid='silo-navigation' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='silo-navigation' tag='SPAN' type='' class='' /&gt;" Guid="85cf2cc6-1a3b-4fa4-a8f8-7586977ce93c" InformativeScreenshot="7fd3e998d2471a3fb278d1b49b854b8f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Designer Clothing, Shoes, Handbags, &amp;amp; Beauty | Neiman Marcus' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="47, 206, 75, 30" ElementType="Text" FriendlyName="'WOMEN'" FullSelectorArgument="&lt;webctrl parentid='clean-header-section' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='clean-header-section' tag='P' type='' class='' aaname='WOMEN' check:innerText='WOMEN' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAiCAYAAAAeXoQCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJbSURBVGhD7ZXrrcMgDEazWrNNlU2uukq7TKWuw3WCTQx8EFKn/3wkpJbysI+NOgXna1yeAZdnwOUZcHkGXJ4Bl2fA5RlweQaSvGmawvz34W+aT3jcJvp9Do83T2leS2dvCM/7ujcfy4t/BHz+5u55Ge9HmNczbw+KUiHzaGRrn2Gp5go4PxRzktc+hC9oHBCTBWL50uZoBCzyugkxqTDl2rPyaDSLNSIvBnIg4f7kSYG7sgxe7amD2gNGgpI8Gr0O7Z7D8o67V51x8LK68lqLROqMJEmFM6n9ThWka8oEtTwkV+iuOyvvRvm17huSB0VwZ9EcfJ7oYJ4br/pCn3bknuUe5eAC8N77wskb5aX84ueMIXkiSiejg+DP+pDYPXnyzecPQGv3IklX1N1wuOYLeXv+uBkO5OmgeGLbKN/1Rej7CihAB6m2DkzHUMWzoYVdKY/gfVn8o/LKS7fOUIFlnQaf57XyUIHyPX1567pqZGvb56e5YXlZMPXBuhNxV4jgeh7Rf7boeynrenl0Y/58x+VJQtQ5HEC2KXXmM15QBk1I5YafTNGldVFUglUifXmnn62Q5FNsZ+Sl50h/33UHcVX4rx0HJ1LKvTmxSPUZqKNl7TZQ51wtj5AmkDEmLyUPgiJ0IujADS7AOuoE+ucjefoZ5nf+Tl5qFHhvBMjbN8HLk5iDPwUlEA+8H8ojtqJVsvvy4L3Z2p48olm0CJC3tyzurIMLC7Inx6PZsURL3prI0uriX8kjei6gPGcMl2fA5RlweQZcngGXZ8DlGXB5BlyeAZdnwOV9TQj/fkG6Ij+SezsAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'WOMEN'" sap:VirtualizedContainerService.HintSize="671.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="7e6fa777-f1f7-49d1-b71c-f0f316ba5888" TextString="[ThirdSilo]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.neimanmarcus.com/mens" DesignTimeRectangle="359, 270, 69, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Clothing'" FullSelectorArgument="&lt;webctrl aaname='Clothing' parentid='silo-navigation' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='silo-navigation' tag='SPAN' type='' class='' /&gt;" Guid="31fd7f8a-2fb6-4916-8c32-215b41477b5b" InformativeScreenshot="168d22e853e687745a8fda63bb79fc92.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Designer Clothing, Shoes, Handbags, &amp;amp; Beauty | Neiman Marcus' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="47, 206, 75, 30" ElementType="Text" FriendlyName="'WOMEN'" FullSelectorArgument="&lt;webctrl parentid='clean-header-section' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='clean-header-section' tag='P' type='' class='' aaname='WOMEN' check:innerText='WOMEN' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAiCAYAAAAeXoQCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJbSURBVGhD7ZXrrcMgDEazWrNNlU2uukq7TKWuw3WCTQx8EFKn/3wkpJbysI+NOgXna1yeAZdnwOUZcHkGXJ4Bl2fA5RlweQaSvGmawvz34W+aT3jcJvp9Do83T2leS2dvCM/7ujcfy4t/BHz+5u55Ge9HmNczbw+KUiHzaGRrn2Gp5go4PxRzktc+hC9oHBCTBWL50uZoBCzyugkxqTDl2rPyaDSLNSIvBnIg4f7kSYG7sgxe7amD2gNGgpI8Gr0O7Z7D8o67V51x8LK68lqLROqMJEmFM6n9ThWka8oEtTwkV+iuOyvvRvm17huSB0VwZ9EcfJ7oYJ4br/pCn3bknuUe5eAC8N77wskb5aX84ueMIXkiSiejg+DP+pDYPXnyzecPQGv3IklX1N1wuOYLeXv+uBkO5OmgeGLbKN/1Rej7CihAB6m2DkzHUMWzoYVdKY/gfVn8o/LKS7fOUIFlnQaf57XyUIHyPX1567pqZGvb56e5YXlZMPXBuhNxV4jgeh7Rf7boeynrenl0Y/58x+VJQtQ5HEC2KXXmM15QBk1I5YafTNGldVFUglUifXmnn62Q5FNsZ+Sl50h/33UHcVX4rx0HJ1LKvTmxSPUZqKNl7TZQ51wtj5AmkDEmLyUPgiJ0IujADS7AOuoE+ucjefoZ5nf+Tl5qFHhvBMjbN8HLk5iDPwUlEA+8H8ojtqJVsvvy4L3Z2p48olm0CJC3tyzurIMLC7Inx6PZsURL3prI0uriX8kjei6gPGcMl2fA5RlweQZcngGXZ8DlGXB5BlyeAZdnwOV9TQj/fkG6Ij+SezsAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Shoes'" sap:VirtualizedContainerService.HintSize="671.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="7e6fa777-f1f7-49d1-b71c-f0f316ba5888" TextString="[ForthSilo]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.neimanmarcus.com/mens" DesignTimeRectangle="495, 270, 50, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Shoes'" FullSelectorArgument="&lt;webctrl aaname='Shoes' parentid='silo-navigation' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='silo-navigation' tag='SPAN' type='' class='' /&gt;" Guid="acfd8081-3c42-4704-8c21-be41f5266230" InformativeScreenshot="79a260128fdfd780967fe172a032db2a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Designer Clothing, Shoes, Handbags, &amp;amp; Beauty | Neiman Marcus' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="837, 136, 243, 118" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl aria-label='Neiman Marcus Logo link to homepage' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Neiman Marcus Logo link to homepage' tag='IMG' type='' class='header-brand-site-logo-container__site-logo false' aaname='Neiman Marcus' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                      <uix:Target DesignTimeRectangle="610, 270, 98, 23" ElementType="Text" FriendlyName="'Accessories'" FullSelectorArgument="&lt;webctrl aaname='Accessories' parentid='silo-navigation' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Accessories' parentid='silo-navigation' tag='SPAN' type='' class='' check:innerText='Accessories' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGYAAAAbCAYAAACOY/p9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKBSURBVGhD7VVbjsMgDMzVmttUucmqV2kvUynXyQK2wS9oKm27fHgkqwp1YDxjnOUITIkwZlKEMZMijJkUYcykCGMmxdCY+3U5liXF9Y4rgYLn7ViX9bg98fkDGBhzP7ZsSoktPQUq/tOY/WctpqwX+N0e+EfgK+gYsx+3C96U0h0xzr4N3xg0Y/3Z0wMzCf61eGzlVlHAexL1e1XCHwMyx9+HuNW8yy0x5OAjOEeHt+Ls5cHUyFxpT8wR+nCQVi28SUPTiMKr0zWmEcIFLMI7RItZo94wLVSLtl8/Rwrfyas5VhgIKXqXcwpeoxZwaIxuGB582piGgNDmOMZgcZ4gepzVQ7zCYa2KIN6V+1GOJle/c7SO5/E8yJGCWSFsk2nO3nozRuUaY1pD6Oal2mgdnvnEwHeVttaYzjXlYhO8NYmOoQLjnHIGNQly824uAPbS3DmGnNEc2p+MMedpjTqaAaTwopEGMMZ0iZtu9Z0WeClkAubkvfvB+AxFyBgZ/YqzNBZEdL6HmkO9bYNgE6i7L4MyBosahZ7nXzHGFtHGTGd/Jtb5ZvqgMabZkYv7nzbm1AGN6F+OsibemyicB92nmuP9UXbCmDMNOIAY1whhDJDuF0ldajulbw7smWJgDuVYc5JpnLASLoPeLWtasITTnJ3108aw7jfm5FxWO/DlZ9OUknyYMZignJOwOVV4HZUMHWyjFdHPyfE6j4ri44GHFLfLWeWdNyYB117uWxtAhWrcZozTjR6gKK8AflAS6rkzgx3BEpE95XAYwbxbZgTQwlnz3JqMQLJjM94ypsDWaXMcvZzLoD7+gVkQxkyKMGZShDGTIoyZFGHMpAhjpsRx/AKWrhFDDL7G7AAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="671.2,135.2" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_1" ItemToAppend="[FirstSilo]" List="[StringList]" />
+            <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="671.2,135.2" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_2" ItemToAppend="[SecondSilo]" List="[StringList]" />
+            <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="671.2,135.2" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_3" ItemToAppend="[ThirdSilo]" List="[StringList]" />
+            <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="671.2,135.2" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_4" ItemToAppend="[ForthSilo]" List="[StringList]" />
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="575.2,1175.2" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="540,1008" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If Condition="[DefaultValues(index) = StringList(index)]" sap:VirtualizedContainerService.HintSize="477.6,774.4" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="400,204.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="337.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;True&quot;]" />
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap:VirtualizedContainerService.HintSize="400,391.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="337.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;False&quot;]" />
+                        <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="Test mail" DisplayName="Send SMTP Mail Message" Email="vincyrejilathomas@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="337.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Password="mgtrwbxbhsjzwyii" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Wrong silo found" To="roshin444@gmail.com">
+                          <ui:SendMail.Files>
+                            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                          </ui:SendMail.Files>
+                        </ui:SendMail>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                  <Assign sap:VirtualizedContainerService.HintSize="477.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[Index]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[Index + 1]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+              <ui:InterruptibleWhile.Condition>
+                <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="index &lt;4" />
+              </ui:InterruptibleWhile.Condition>
+            </ui:InterruptibleWhile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHESURBVDhPpZK/y6lhHMZRFiSLBeUPMAgTpaTEgEGZrAwiE5lIFKWkhKSUZJCfIQaR1UY2/wHKJIPpOu777bmf9xzv0alz16eu6/vreb7P/QheB/8Jb7xeLyQSCfPRaBQymYz5v8Cb9XoNn8/HfLvdZvoDvOn1eshkMlRrNBpks1mW+wBvxuMxVqsV1R6PB36/n2qr1Qqj0cjq/oA3ZMDj8YBSqUQikYDJZKLxWCyGfD7P6orFItMv+AH1eh2HwwHBYBDlcpmuQeLxeByTyYRqi8WCxWLBel58CYVCgWaziUKhgM1mg06nA7lcTnONRgOn04nqUqmE0WjENRO+hNPpRDqdhsFgwPP5xHa7hVgsprnpdIrr9QqtVksH9fv99wG5XA4ul4vq5XKJ2+3GiubzOfb7PSqVCn19ct1c7oUA1WoVu90OUqmUBsm/cL/f6QoqlQqtVguz2Qzn8xnhcBjH4/H3AZFIhO78LQi3201XCAQCCIVCqNVq9MkOhwOXywVCoZAf8AnyAdVqNZLJJFKpFPR6PcgZDAZczXsTB1mh2+1STa5Pp9NBJBJhOBzCZrNxde+NHGazGXa7/cfcN34M/iMC/AIRM5KmVGPM/wAAAABJRU5ErkJggg==" InformativeScreenshot="1c39a3c1d80d2ffdd358379a0f7c0c30.jpg" Selector="&lt;html app='msedge.exe' title='Designer Clothing, Shoes, Handbags, &amp;amp; Beauty | Neiman Marcus' /&gt;" Url="https://www.neimanmarcus.com/mens" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
